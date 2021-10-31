@@ -1,0 +1,101 @@
+.main-home-page-container
+{
+    .map-item{
+        padding: 100px 0;
+    }
+    h2{
+        margin-bottom: 20px;
+        font-size: 27px;
+        font-weight: 600;
+        color: #262929;
+    }
+    textarea{
+        display: block;
+        border: 1px solid #e5e6e9;
+        outline: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding: 15px;
+        width: 100%;
+        height: 250px;
+        color: #262929;
+    }
+    input{
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid #e5e6e9;
+        outline: none;
+        margin-bottom: 20px;
+        width: 48%;
+        font-size: 15px;
+        padding: 10px 15px;
+        @media (max-width: 768px) {
+            display: block;
+            width: 100%;
+        }
+    }
+    .email{
+        margin-left: 20px;
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+    .subject{
+        width: 100%;
+    }
+    button{
+        display: block;
+        padding: 15px 50px;
+        border: 1px solid #42b5f2;
+        background: none;
+        color: #42b5f2;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        transition: all .4s;
+        &:hover{
+            background-color: #42b5f2;
+            color: #FFFFFF;
+        }
+    }
+    .contact-item
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        @media (max-width: 768px) {
+            margin-top: 50px;
+        }
+        .icon
+        {
+            flex: .1;
+            @media (max-width: 768px) {
+                flex: .05;
+            }
+            i{
+                color: #8f9195;
+                margin-top: 10px;
+                font-size: 30px;
+            }
+        }
+        .contact-details
+        {
+            flex: .88;
+            @media (max-width: 768px) {
+                flex: .92;
+            }
+            @media (max-width: 700px) {
+                flex: .9;
+            }
+            h4{
+                color: #2a2a2a;
+                font-size: 16px;
+            }
+            p{
+                font-size: 16px;
+                color: #8a8a8a;
+            }
+        }
+    }
+}

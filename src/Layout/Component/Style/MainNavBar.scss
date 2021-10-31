@@ -1,0 +1,94 @@
+@import "../../../Style/__variable.scss";
+
+.main-nav-bar-container
+{
+    background-color: $thirdColor;
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    @media (max-width: 768px) {
+        text-align: left;
+    }
+    img{
+        margin: 15px 0;
+        @media (max-width: 768px) {
+           width: 170px;
+            margin-top: 5px;
+        }
+        @media (max-width: 700px) {
+           width: 140px;
+            margin-top: 15px;
+        }
+    }
+    .links
+    {
+        li
+        {
+            display: inline-block;
+            margin: 10px 24px;
+            @media (max-width: 1024px) {
+                margin: 10px;
+            }
+            @media (max-width: 768px) {
+                display: block;
+                margin: 10px;
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 10px;
+                color: $secondColor;
+                transition: all .4s;
+                &:hover{
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+    button{
+        margin: 15px;
+        border: none;
+        color: $secondColor;
+        border-radius: 25px;
+        padding: 10px 25px;
+        background: $mainColor;
+        font-size: 15px;
+    }
+    .main-dropdown-list-container
+    {
+        position: absolute;
+        top: 60px;
+        right: 65px;
+        width: 85%;
+        background-color: $thirdColor;
+        text-align: left;
+        animation: animate 1s ease-in-out;
+        z-index: 1;
+        border-top: 1px solid rgba(255, 255, 255, .4);
+        @media (max-width: 700px) {
+            right: 0;
+            width: 100%;
+        }
+    }
+    .drop-down-list
+    {
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+        top: 17px;
+        div{
+            width: 25px;
+            height: 2px;
+            margin: 5px 0;
+            background-color: $secondColor;
+        }
+    }
+}
+
+@keyframes animate {
+    0%{top: -150px}
+    100%{top: 50px}
+}

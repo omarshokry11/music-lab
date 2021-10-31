@@ -1,0 +1,84 @@
+@import "../../../Style/__variable.scss";
+
+.main-pricing-item-container
+{
+    padding: 100px 0 50px;
+    background-color: #F5F7F9;
+    .pricing-item
+    {
+        background-color: $secondColor;
+        border: 1px solid #DDE4E8;
+        border-radius: 8px;
+        padding: 30px;
+        text-align: left;
+        transition: all .4s;
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+        .pricing-title
+        {
+            border-bottom: 1px solid #DDE4E8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            span{
+                color: #262929;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            h4{
+                font-size: 24px;
+                font-weight: 700;
+                color: #4294F2;
+            }
+        }
+        ul
+        {
+            margin-bottom: 20px;
+            li
+            {
+                margin-bottom: 10px;
+                i{
+                    margin-right: 15px;
+                    color: #262929;
+                }
+                span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #6D6D6D;
+                }
+            }
+        }
+        button{
+            background: $mainColor;
+            color: $secondColor;
+            border: 1px solid transparent;
+            border-radius: 25px;
+            padding: 10px 50px;
+            transition: all .4s;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &:hover {
+            background-color: $thirdColor;
+            .pricing-title{
+                span{
+                    color: $secondColor;
+                }
+            }
+            i{
+                color: $secondColor;
+            }
+            span{
+                color: rgba(255, 255, 255, .7);
+            }
+            button{
+                background: none;
+                border: 1px solid #4294F2;
+                color: #4294F2;
+                &:hover{
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}

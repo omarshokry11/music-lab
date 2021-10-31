@@ -1,0 +1,72 @@
+.main-carousel-alice-container
+{
+    padding-top: 100px;
+    .products-carousel-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .items {
+            margin: 0 15px;
+            .item
+            {
+                padding: 50px 14px 31px 43px;
+                background-color: #f5f7f9;
+                border: 2px solid #DDE4E8;
+                border-radius: 8px;
+                p{
+                    margin: 25px 0;
+                    font-size: 12px;
+                    color: #262929;
+                    line-height: 1.8;
+                    font-weight: 500;
+                    @media (max-width: 500px) {
+                        font-size: 10px;
+                    }
+                }
+                .details
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    .user-img{
+                        flex: .1;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+                    .user{
+                        flex: .85;
+                        margin-top: 10px;
+                        h3{
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                            color: #262929;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #74706b;
+                            @media (max-width: 500px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                .icon
+                {
+                    i{
+                        color: #316ec2;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alice-carousel__dots{
+    display: none;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
+    display: none;
+}

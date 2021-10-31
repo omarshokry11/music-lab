@@ -1,0 +1,30 @@
+@import "../../../Style/__variable.scss";
+
+.main-online-music-container
+{
+    padding: 100px 0 50px;
+    .items
+    {
+        margin-bottom: 25px;
+        img{
+            width: 35%;
+            margin-bottom: 20px;
+            @media (max-width: 768px) {
+                width: 25%;
+            }
+        }
+        h3{
+            color: #262929;
+            font-size: 1.75rem;
+            font-weight: 500;
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+        span{
+            font-size: 13px;
+            font-weight: 600;
+            color: #8F8F8F;
+        }
+    }
+}
