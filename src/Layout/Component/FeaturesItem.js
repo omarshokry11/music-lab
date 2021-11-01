@@ -26,7 +26,7 @@ export default function FeaturesItem() {
                         <Image className="cover-img" src={item.img} />
                     </div>
                     <div className="features-details">
-                        <Image src={item.logo} />
+                        <Image src={item.logo} className="logo" />
                         <h1>{item.h1}</h1>
                         <ul>
                             {item.images.map((img) => <li key={img.id}>

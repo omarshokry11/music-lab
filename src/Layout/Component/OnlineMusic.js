@@ -1,8 +1,8 @@
 import React from "react";
 import {Image} from "react-bootstrap";
+import TitleComponent from "./Block/TitleComponent";
 
 import "./Style/OnlineMusic.scss";
-import TitleComponent from "./Block/TitleComponent";
 
 export default function OnlineMusic() {
 
